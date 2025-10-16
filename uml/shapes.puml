@@ -1,0 +1,30 @@
+@startuml
+interface Shape {
++calculateArea(): double
+}
+
+
+class Circle {
+-radius: double
++calculateArea(): double
+}
+
+
+class Rectangle {
+-width: double
+-height: double
++calculateArea(): double
+}
+
+
+class Triangle {
+-base: double
+-height: double
++calculateArea(): double
+}
+
+
+Shape <|.. Circle
+Shape <|.. Rectangle
+Shape <|.. Triangle
+@enduml
